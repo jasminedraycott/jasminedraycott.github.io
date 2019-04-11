@@ -1,0 +1,282 @@
+.logoTop {
+    width: 40%;
+}
+
+.fa-shopping-cart {
+    color: #ec7992;
+    font-size: 2rem;
+    padding-left: 20px;
+    transition: transform .2s;
+}
+.fa-shopping-cart:hover{
+    transform: scale(1.1);
+}
+
+.fa-trash-alt:hover {
+    transform: rotate(360deg);
+    transition: 1s all;
+}
+
+.navbar-brand {
+    width: 30%;
+}
+
+.imgCountry1 {
+    width: 45%;
+    margin: 20px;
+    float: left;
+    transition: transform .2s;
+}
+
+.imgCountry2 {
+    width: 45%;
+    margin: 20px;
+    float: right;
+    transition: transform .2s;
+}
+
+.imgCountry1:hover {
+    cursor: pointer;
+}
+
+.imgCountry2:hover {
+    cursor: pointer;
+}
+
+.imgCountry3:hover {
+    cursor: pointer;
+}
+
+.imgCountry4:hover {
+    cursor: pointer;
+}
+
+.imgCountry3 {
+    width: 45%;
+    margin: 20px;
+    float: left;
+    transition: transform .2s;
+}
+
+.imgCountry4 {
+    width: 45%;
+    margin: 20px;
+    float: right;
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.04);
+}
+
+body {
+    background-color: #f8f9fa;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.say-hello {
+    margin-top: 20px;
+    font-family: "Roboto";
+    color: #ec7992;
+    text-align: center;
+}
+
+.say-hello2 {
+    margin-top: 20px;
+    font-family: "Roboto";
+    color: #ec7992;
+}
+
+.aboutheader {
+    margin-top: 20px;
+    font-family: "Roboto";
+    color: #ec7992;
+}
+
+.featured-product {
+    width: 20%;
+    float: left;
+}
+
+.feature-home {
+    padding: 20px;
+}
+
+.feature-text {
+    float: left;
+    vertical-align: top;
+    margin-left: 20px;
+    color: #565656;
+}
+
+.feature-paragraph {
+    float: left;
+    margin-left: 20px;
+    width: 60%;
+}
+
+.feature-price {
+    vertical-align: top;
+    color: #565656;
+}
+
+.add-cart {
+    background-color: #ec7992;
+    color: white;
+}
+
+.btn-pink {
+    background-color: #ec7992;
+    color: white;
+}
+
+.feature-button {
+    float: left;
+    margin-left: 20px;
+}
+
+.cartItemImage {
+    width: 30%;
+}
+
+.moisturizer {
+    width: 90%;
+}
+
+.masks {
+    width: 90%;
+}
+
+.sunscreen {
+    width: 90%;
+}
+
+.pinkspace {
+    height: 40px;
+    background-color: #ec7992;
+}
+
+#perfectWhipTable,
+#innisfreeTable,
+#aveenoTable,
+#etudehouseTable,
+#cleanandclearTable,
+#animalzTable,
+#antiagingTable,
+#neutrogenaTable,
+#bioreTable,
+#promoCodeTable {
+    display: none;
+}
+
+.trash:hover {
+    cursor: pointer;
+}
+
+.jumbotron-moisturizer {
+    background-image: url(images/moisturizer.png);
+    background-size: 100%;
+    min-height: 380px;
+}
+
+.jumbotron-masks {
+    background-image: url(images/masks.png);
+    background-size: 100%;
+    min-height: 380px;
+
+}
+
+.jumbotron-about {
+    background-image: url(images/about.png);
+    background-size: 100%;
+    min-height: 380px;
+}
+
+.jumbotron-sunscreen {
+    background-image: url(images/sunscreen.png);
+    background-size: 100%;
+    min-height: 380px;
+
+}
+
+.jumbotron-contact {
+    background-image: url(images/contact.png);
+    background-size: 100%;
+    min-height: 380px;
+}
+
+.jumbotron-japaneseproducts {
+    background-image: url(images/japaneseproducts.png);
+    background-size: 100%;
+    min-height: 380px;
+}
+
+.jumbotron-koreanproducts {
+    background-image: url(images/koreanproducts.png);
+    background-size: 100%;
+    min-height: 380px;
+}
+.jumbotron-northamericanproducts {
+    background-image: url(images/northamericanproducts.png);
+    background-size: 100%;
+    min-height: 380px;
+}
+
+
+.modal-body {
+    position: relative;
+}
+
+.whitespace {
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #ec7992;
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-text {
+    color: white;
+}
+
+.cartHover:hover {
+    cursor: pointer;
+}
+
+.euroImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text {
+    float: left;
+    margin-right: 20px;
+}
+
+.alert-custom {
+    margin-top: 30px;
+    background-color: #ec7992;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+.googlemaps {
+    margin-top: 30px;
+    float: right;
+    margin-bottom: 100px;
+}
+
+.fa-trash-alt:hover {
+    cursor: pointer;
+}

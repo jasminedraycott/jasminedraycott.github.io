@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS -->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>LOKILOKI - Cart</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo1.png" class="logoTop"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Skincare
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="moisturizer.html">Moisturizer</a>
+                            <a class="dropdown-item" href="masks.html">Masks</a>
+                            <a class="dropdown-item" href="sunscreen.html">Sunscreen</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Makeup
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item disabled" href="#">Coming Soon!</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact </a>
+                    </li>
+                </ul>
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="pinkspace">
+    </div>
+    <div class="container">
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="perfectWhipTable">
+                    <td style="width:30%"><img src="images/perfectwhip.jpg" class="cartItemImage"></td>
+                    <td>Shiseido Senka Perfect Whip</td>
+                    <td>$12.99</td>
+                    <td id="tdPerfect"></td>
+                    <td id="perfectWhipDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="innisfreeTable">
+                    <td style="width:30%"><img src="images/innisfreemasks.jpg" class="cartItemImage"></td>
+                    <td>Innisfree Masks (10)</td>
+                    <td>$17.89</td>
+                    <td id="tdInnis"></td>
+                    <td id="innisfreeDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="aveenoTable">
+                    <td style="width:30%"><img src="images/aveeno-moisturizer.png" class="cartItemImage"></td>
+                    <td>Aveeno Daily Moisturizer</td>
+                    <td>$7.97</td>
+                    <td id="tdAveeno"></td>
+                    <td id="aveenoDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="etudehouseTable">
+                    <td style="width:30%"><img src="images/etudehousecream.jpg" class="cartItemImage"></td>
+                    <td>Etude House Moistful Collagen Cream</td>
+                    <td>$20.40</td>
+                    <td id="tdEtude"></td>
+                    <td id="etudehouseDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="cleanandclearTable">
+                    <td style="width:30%"><img src="images/cleanandclear.jpg" class="cartItemImage"></td>
+                    <td>Clean and Clear Hydrating Gel Moisturizer</td>
+                    <td>$6.69</td>
+                    <td id="tdClean"></td>
+                    <td id="cleanandclearDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="animalzTable">
+                    <td style="width:30%"><img src="images/animalzmask.jpg" class="cartItemImage"></td>
+                    <td>Animalz Mask (Dog)</td>
+                    <td>$4.20</td>
+                    <td id="tdAnimalz"></td>
+                    <td id="animalzDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="antiagingTable">
+                    <td style="width:30%"><img src="images/antiagingmask.jpg" class="cartItemImage"></td>
+                    <td>Kracie Hadabisei Facial Mask 3d Aging Moisturizer</td>
+                    <td>$7.25</td>
+                    <td id="tdAntiAging"></td>
+                    <td id="antiagingDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="neutrogenaTable">
+                    <td style="width:30%"><img src="images/neutrogena.jpg" class="cartItemImage"></td>
+                    <td>Neutrogena Clear Face Sunscreen Spf 60</td>
+                    <td>$14.98</td>
+                    <td id="tdNeutrogena"></td>
+                    <td id="neutrogenaDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="bioreTable">
+                    <td style="width:30%"><img src="images/biore.jpg" class="cartItemImage"></td>
+                    <td>Biore UV Aqua Rich Watery Essence SPF 50+ PA++++</td>
+                    <td>$12.34</td>
+                    <td id="tdBiore"></td>
+                    <td id="bioreDelete" onclick="deleteItem(this.id)"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr id="clearCart">
+                    <td></td>
+                    <td>Delete cart items</td>
+                    <td></td>
+                    <td></td>
+                    <td> <button type="button" class="btn btn-danger" onclick="deleteCart()">Clear Cart</button>
+                    </td>
+                </tr>
+                <tr id="checkout">
+                    <td></td>
+                    <td>Your total is:</td>
+                    <td id="cartTotal" class="checkoutTotal"> $</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="whitespace"></div>
+    <footer>
+        <div class="container footer-text">
+            <p>© 2018 LOKILOKI. All rights reserved. Terms and Conditions</p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    var holdCart = new Array();
+
+    //Retrieve featured product from home page
+    var featuredDisplay = localStorage.getItem("product1");
+
+    //Retrieve locally stored product data, parse data and save into array
+    var productDisplay = localStorage.getItem("product");
+    var productArray = JSON.parse(productDisplay);
+    console.log(productArray);
+
+    var total = 0;
+    var perfectCount = 0;
+    var innisCount = 0;
+    var aveenoCount = 0;
+    var etudeCount = 0;
+    var cleanCount = 0;
+    var animalzCount = 0;
+    var antiagingCount = 0;
+    var neutrogenaCount = 0;
+    var bioreCount = 0;
+
+    if (featuredDisplay == "perfectwhip") {
+        $('#perfectWhipTable').show();
+        perfectCount++;
+        document.getElementById('tdPerfect').innerHTML = perfectCount;
+        total = total + 12.99;
+    }
+
+    for (i = 0; i < 100; i++) {
+        if (productArray[i] == "innisfreemasks") {
+            $('#innisfreeTable').show();
+            innisCount++;
+            document.getElementById('tdInnis').innerHTML = innisCount;
+            total = total + 17.89;
+        } else if (productArray[i] == "aveenodaily") {
+            $('#aveenoTable').show();
+            aveenoCount++;
+            document.getElementById('tdAveeno').innerHTML = aveenoCount;
+            total = total + 7.97;
+        } else if (productArray[i] == "etudehousecream") {
+            $('#etudehouseTable').show();
+            total = total + 20.40;
+            etudeCount++;
+            document.getElementById('tdEtude').innerHTML = etudeCount;
+        } else if (productArray[i] == "cleanandclear") {
+            $('#cleanandclearTable').show();
+            cleanCount++;
+            document.getElementById('tdClean').innerHTML = cleanCount;
+            total = total + 6.69;
+        } else if (productArray[i] == "animalzmask") {
+            $('#animalzTable').show();
+            animalzCount++;
+            document.getElementById('tdAnimalz').innerHTML = animalzCount;
+            total = total + 4.20;
+        } else if (productArray[i] == "antiaging") {
+            $('#antiagingTable').show();
+            antiagingCount++;
+            document.getElementById('tdAntiAging').innerHTML = antiagingCount;
+            total = total + 7.25;
+        } else if (productArray[i] == "neutrogena") {
+            $('#neutrogenaTable').show();
+            neutrogenaCount++;
+            document.getElementById('tdNeutrogena').innerHTML = neutrogenaCount;
+            total = total + 14.98;
+        } else if (productArray[i] == "biore") {
+            $('#bioreTable').show();
+            bioreCount++;
+            document.getElementById('tdBiore').innerHTML = bioreCount;
+            total = total + 12.34;
+        }
+    }
+
+
+    $("td.checkoutTotal").append(total.toFixed(2));
+
+    function checkout() {
+        window.location = "checkout.html";
+    }
+
+    function deleteItem(clickedID) {
+        console.log(clickedID);
+        var deleteMe = "notYetDefined";
+
+        if (clickedID == "perfectWhipDelete") {
+            deleteMe = "perfectwhip";
+            console.log(deleteMe);
+            total = total - 12.99;
+        } else if (clickedID == "innisfreeDelete") {
+            deleteMe = "innisfreemasks";
+            total = total - 17.89;
+        } else if (clickedID == "aveenoDelete") {
+            deleteMe = "aveenodaily";
+            total = total - 7.97;
+        } else if (clickedID == "etudehouseDelete") {
+            deleteMe = "etudehousecream"
+            total = total - 20.40;
+        } else if (clickedID == "cleanandclearDelete") {
+            deleteMe = "cleanandclear";
+            total = total - 6.69;
+        } else if (clickedID == "animalzDelete") {
+            deleteMe = "animalzmask"
+            total = total - 4.20;
+        } else if (clickedID == "antiagingDelete") {
+            deleteMe = "antiaging";
+            total = total - 7.25;
+        } else if (clickedID == "neutrogenaDelete") {
+            deleteMe = "neutrogena";
+            total = total - 14.98;
+        } else if (clickedID == "bioreDelete") {
+            deleteMe = "biore";
+            total = total - 12.34;
+        }
+        
+        for(k=0;k<2;k++){
+            if(featuredDisplay == deleteMe){
+                featuredDisplay = "deleted";
+                localStorage.setItem("product1", JSON.stringify(featuredDisplay));
+                location.reload();
+            }
+        }
+
+        for (i = 0; i < 100; i++) {
+            if (productArray[i] == deleteMe) {
+                console.log("found");
+                productArray.splice(i,1);
+                localStorage.setItem("product", JSON.stringify(productArray));
+                location.reload();
+            }
+        }
+    }
+
+
+    function deleteCart() {
+        localStorage.clear();
+        console.log("deleted");
+        location.reload();
+    }
+
+</script>
+<script>
