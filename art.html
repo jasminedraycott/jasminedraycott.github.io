@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jasmine's Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jasmine's Portfolio Website">
+    <link rel="stylesheet" href="myCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner carousel-height">
+            <div class="text-overlay">
+                <div class="container">
+                    <div class=" text-left bg-transparent">
+                        <h1 class="carousel-text">MY ART</h1>
+                        <!-- <p class="carousel-sub-text">Welcome to my site. Enjoy your stay.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100 max-carousel adjust-img1" src="images/art-header2.JPG" alt="First slide">
+            </div>
+        </div>
+    </div>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-inverse navbar-color navbar2">
+            <ul class="nav navbar-nav">
+                <li class="nav-item li-padding">
+                    <a class="nav-link change-font whitebar" href="index.html">Home</a>
+                </li>
+                <h2 class="change-font2">|</h2>
+                <li class="nav-item li-padding">
+                    <a class="nav-link change-font whitebar active-nav" href="art.html">Art</a>
+                </li>
+                <h2 class="change-font2">|</h2>
+                <li class="nav-item li-padding">
+                    <a class="nav-link change-font whitebar" href="webdev.html">HTML/CSS</a>
+                </li>
+                <h2 class="change-font2">|</h2>
+                <li class="nav-item li-padding">
+                    <a class="nav-link change-font whitebar" href="#">PHP/SQL</a>
+                </li>
+                <h2 class="change-font2">|</h2>
+                <li class="nav-item li-padding">
+                    <a class="nav-link change-font whitebar" href="#">Work Experience</a>
+                </li>
+                <h2 class="change-font2">|</h2>
+                <li class="nav-item li-padding">
+                    <a class="nav-link change-font whitebar" href="volunteering.html">Volunteering</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+
+        <img src="images/seonghwa_drawing.jpg" id="img03" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/san_cutie.png" id="img06" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/hwa.jpg" id="img02" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <div class="extra-space"></div>
+        <img src="images/felix-selca.png" id="img01" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+         <img src="images/street%20crop.jpg" id="img05" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/prettygirl2.png" id="img04" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <div class="extra-space"></div>
+        <img src="images/sw.png" id="img07" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/bonus%20crop.jpg" id="img08" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/anime%20girl.png" id="img09" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <div class="extra-space"></div>
+        <img src="images/leeknow.jpg" id="img13" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/jungkook.png" id="img14" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/snowboard%20crop.jpg" id="img15" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <div class="extra-space"></div>
+        <img src="images/birdad%20crop.png" id="img10" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/chan%20sketch.png" id="img11" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/jvcki%20improved.png" id="img12" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="insert-img"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-space"></div>
+</body>
+
+</html>
+
+<script>
+    function setImage(imgID) {
+        var currentImage = imgID;
+        console.log(currentImage);
+        var elementExists = document.getElementById("img-modal");
+        if (elementExists != null) {
+            document.getElementById("img-modal").outerHTML = "";
+        }
+
+        if (currentImage == "img01") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/felix-selca.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img02") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/hwa.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img03") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/seonghwa_drawing.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img04") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/prettygirl2.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img05") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/street.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img06") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/san_cutie.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img07") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/sw.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img08") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/bonus.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img09") {
+            console.log("chan");
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/anime%20girl.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            console.log(myImage);
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img10") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/birdad.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img11") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/chan%20sketch.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img12") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/jvcki%20improved.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img13") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/leeknow.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img14") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/jungkook.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img15") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/snowboard.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        }
+    }
+
+</script>
