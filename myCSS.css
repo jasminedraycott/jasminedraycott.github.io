@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px){
+    .gallery-img{
+        width: 100% !important;
+    }
+}
+
 .change-font {
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -8,12 +14,24 @@
     color: white;
 }
 
-.change-font:hover {
-    color: hotpink;
+.navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    color: hotpink !important;
+}
+
+.navbar{
+    margin; 0;
 }
 
 .navbar {
     background-color: #1a1a1a;
+}
+
+body{
+    margin:0;
 }
 
 html {
@@ -26,12 +44,12 @@ body {
 }
 
 .carousel {
-    height: 65%;
     margin-bottom: 0px;
 }
 
 .carousel-inner {
     max-height: 100%;
+    margin-bottom: 0;
 }
 
 .carousel-item:after {
