@@ -10,6 +10,9 @@
     .carousel-text{
         font-size: 10vw !important;
     }
+    .carousel-sub-text{
+        font-size: 5vw !important;
+    }
 }
 
 .change-font {
