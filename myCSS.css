@@ -23,6 +23,10 @@
     }
 }
 
+.home-items{
+    margin-bottom: 5vw;
+}
+
 .change-font {
     font-family: 'Roboto', sans-serif;
     color: white;
