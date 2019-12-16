@@ -1,17 +1,25 @@
-@media screen and (max-width: 600px){
-    .gallery-img{
+@media screen and (max-width: 600px) {
+    .gallery-img {
         width: 100% !important;
     }
-    .carousel-item{
+
+    .carousel-item {
         width: 250% !important;
         position: absolute;
         right: 120%;
     }
-    .carousel-text{
+
+    .carousel-text {
         font-size: 10vw !important;
     }
-    .carousel-sub-text{
+
+    .carousel-sub-text {
         font-size: 5vw !important;
+    }
+
+    .home-image {
+        width: 100% !important;
+        margin-bottom: 6vw;
     }
 }
 
@@ -33,16 +41,17 @@
     color: hotpink !important;
 }
 
-.navbar{
-    margin; 0;
+.navbar {
+    margin;
+    0;
 }
 
 .navbar {
     background-color: #1a1a1a;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
 html {
@@ -190,15 +199,18 @@ body {
     float: left;
     margin-right: 1.5vw;
 }
+
 .engfrosh-pic {
     width: 20%;
     float: left;
     margin-right: 1.5vw;
 }
-.wcw{
+
+.wcw {
     width: 50%;
     float: left;
 }
-.modal-dialog{
+
+.modal-dialog {
     min-width: 50%;
 }
