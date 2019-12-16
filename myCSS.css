@@ -2,6 +2,14 @@
     .gallery-img{
         width: 100% !important;
     }
+    .carousel-item{
+        width: 250% !important;
+        position: absolute;
+        right: 120%;
+    }
+    .carousel-text{
+        font-size: 10vw !important;
+    }
 }
 
 .change-font {
