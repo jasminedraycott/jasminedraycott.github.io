@@ -85,6 +85,10 @@
         <img src="images/birdad%20crop.png" id="img10" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <img src="images/seonghwa_drawing.jpg" id="img11" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <img src="images/jvcki%20improved.png" id="img12" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <div class="extra-space"></div>
+        <img src="images/summerwalker.png" id="img16" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/wooyoung.jpg" id="img17" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/prettygirl2.png" id="img18" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -202,6 +206,25 @@
         } else if (currentImage == "img15") {
             var myImage = document.createElement("img");
             myImage.setAttribute("src", "images/big/snowboard.JPG");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        }
+         else if (currentImage == "img16") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/big/summerwalker.png");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img17") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/big/wooyoung.jpg");
+            myImage.setAttribute("style", "width:100%");
+            myImage.setAttribute("id", "img-modal");
+            document.getElementById("insert-img").appendChild(myImage);
+        } else if (currentImage == "img18") {
+            var myImage = document.createElement("img");
+            myImage.setAttribute("src", "images/big/prettygirl2.png");
             myImage.setAttribute("style", "width:100%");
             myImage.setAttribute("id", "img-modal");
             document.getElementById("insert-img").appendChild(myImage);
