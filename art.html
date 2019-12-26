@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-     <div class="sticky-top">
+    <div class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-inverted navbar-color navbar2">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,12 +66,12 @@
     </div>
     <div class="container">
 
-        <img src="images/wonderland_hwa.jpg" id="img03" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/wonderland_hwa_edit.jpg" id="img03" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <img src="images/sannie_new.jpg" id="img02" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <img src="images/cutiesan.jpg" id="img06" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <div class="extra-space"></div>
         <img src="images/felix-selca.png" id="img01" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
-         <img src="images/san_cutie.jpg" id="img05" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
+        <img src="images/san_cutie.jpg" id="img05" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <img src="images/street%20crop.jpg" id="img04" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
         <div class="extra-space"></div>
         <img src="images/yunho.jpg" id="img13" class="gallery-img myHover" data-toggle="modal" data-target="#exampleModal" onclick="setImage(this.id)">
@@ -131,7 +131,7 @@
             document.getElementById("insert-img").appendChild(myImage);
         } else if (currentImage == "img03") {
             var myImage = document.createElement("img");
-            myImage.setAttribute("src", "images/big/wonderland_hwa.jpg");
+            myImage.setAttribute("src", "images/big/wonderland_hwa_edit.jpg");
             myImage.setAttribute("style", "width:100%");
             myImage.setAttribute("id", "img-modal");
             document.getElementById("insert-img").appendChild(myImage);
@@ -209,8 +209,7 @@
             myImage.setAttribute("style", "width:100%");
             myImage.setAttribute("id", "img-modal");
             document.getElementById("insert-img").appendChild(myImage);
-        }
-         else if (currentImage == "img16") {
+        } else if (currentImage == "img16") {
             var myImage = document.createElement("img");
             myImage.setAttribute("src", "images/big/summerwalker.png");
             myImage.setAttribute("style", "width:100%");
